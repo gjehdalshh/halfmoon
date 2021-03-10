@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+body{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	margin: 0;
+    padding: 0 0 60px 0;
+    border-bottom: 1px solid;
+    border-color: #f0ba5e;
+}
+h2{
+	margin: 70px 0 0 60px;
+}
+input{
+	background: white;
+    border-color: #000000;
+    border: 0.5px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 4px;
+}
+button{
+	background: white;
+    border-color: #000000;
+    border: 0.5px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px 3px 4px 3px;
+}
+
+.profile_img{
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid #ecf0f1;
+  width: 150px;
+  height: 150px;
+}
+.profile_user_nm{
+	margin-top: 15px;
+    font-size: 18px;
+}
+
+
+#profile-logo a{
+	position: relative;
+}
+#profile-logo a img{
+	width: 280px;
+    margin-top: 50px;
+}
+.profile_id{
+	margin: 0 15px 0 35px;
+}
+.profile_pw{
+	margin: 0 15px 0 19px;
+}
+.profile_nm{
+	margin: 0 15px 0 49px;
+}
+.profile_ph{
+	margin: 0 12px 0 4px;
+}
+
+#Uprofile{
+	margin-bottom: 20px;
+}
+
+
+#profile{
+	height: 100%;
+	margin: auto;
+    width: 1200px;
+}
+
+
+#profile-div{
+	display: flex;
+    margin-top: 50px;
+    height: 79%;
+}
+
+#profile_left{
+	width: 300px;
+    border-right: 1px solid;
+    border-color: #f0ba5e;                                         
+}
+
+#profile_right{
+    width: 800px;
+    border-right: 1px solid;
+    padding-right: 70px;
+    margin-left: 100px;
+    border-color: #f0ba5e;
+}
+
+#profile-left-div1{
+	height: 5%;
+}
+
+#profile-left-div2{
+	height: 81%;
+	margin-top: 50px;
+}
+
+#profile_right_div1{
+	height: 18%;
+}
+
+#profile_right_div2{
+	height: 82%;
+}
+
+#profile-user-logo{
+	text-align: center;
+	margin-top: 50px;
+}
+
+
+
+#user_pw{
+	border: 0.5px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#profile-left-div2 div{
+	font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 9px;
+    margin-right: 90px;
+}
+
+.profile_file{
+	display: none;
+}
+
+#profile_right_div2 div{
+	font-size: 15px;
+	margin: 0 0 20px 0;
+}
+
+
+#postcode{
+	width: 270px;
+    height: 20px;
+    padding: 13px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#roadAddress{
+	width: 270px;
+    height: 20px;
+    margin-bottom: 5px;
+    padding: 13px;
+}
+#jibunAddress{
+	width: 270px;
+    height: 20px;
+    padding: 13px;
+}
+#detailAddress{
+	display: block;
+    width: 546px;
+    height: 20px;
+    padding: 13px;
+    margin-bottom: 5px;
+}
+#extraAddress{
+	display: none;
+}

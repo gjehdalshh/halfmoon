@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+body{
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
+}
+
+#regProduct{
+	width: 1000px;
+	margin: auto;
+}
+
+.regProduct_div1{
+	display: flex;
+	border-bottom: 1px solid;
+    margin: 20px 0 40px 0;
+}
+
+.h1{
+	font-size: 30px;
+    text-align: start;
+    font-weight: 200;
+}
+.span1_check{
+	color: rgb(255, 80, 88);
+    margin-left: 10px;
+   	margin-top: 30px;
+}
+
+.product{
+	display: flex;
+	border-bottom: 1px solid rgb(220, 219, 228);
+    margin-bottom: 30px;
+}
+
+.div-Text1{
+	width: 180px;
+    height: 200px;
+    font-size: 18px;
+}
+.div-right1{
+	width: 800px;
+	height: 200px;
+}
+.div-Text2{
+	width: 180px;
+    height: 65px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.div-right2{
+	width: 800px;
+	height: 60px;
+}
+#p_title{
+	height: 35px;
+    width: 600px;
+    padding-left: 15px;
+}
+#product_type{
+	padding: 10px 0 10px 15px;
+    width: 300px;
+    font-size: 15px;
+}
+#product_sub_type{
+	padding: 10px 0 10px 15px;
+    width: 300px;
+    font-size: 15px;
+}
+#loc{
+	padding: 10px 0 10px 15px;
+    width: 300px;
+    font-size: 15px;
+}
+#p_nm{
+	height: 35px;
+    width: 600px;
+    padding-left: 15px;
+}
+#p_price{
+	height: 35px;
+    width: 200px;
+    padding-left: 15px;
+    margin-right: 10px;
+}
+.won{
+	font-size: 17px;
+}
+.div-Text7{
+	width: 180px;
+    height: 200px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+#p_ctnt{
+	height: 160px;
+    width: 600px;
+    padding: 15px 0 0 15px;
+}
+.div-Text8{
+	width: 180px;
+    height: 200px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+#p_tag{
+	height: 30px;
+    width: 600px;
+    padding: 15px 0 0 15px;
+    margin-bottom: 10px;
+}
+
+.span1{
+	color: rgb(255, 80, 88);
+}
+.explanation{
+	color: rgb(136, 136, 136);
+	font-size: 15px;
+	height: 300px;
+}
+
+footer{
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: rgb(234 233 241);
+    height: 60px;
+}
+.register-div{
+	width: 100px;
+    margin: auto;
+    height: 60px;
+}
+#btn_reg{
+	width: 150px;
+    height: 50px;
+    margin-top: 5px;
+    background-color: Transparent;
+    border: 0.5px solid rgb(136, 136, 136);
+    outline: none;
+    cursor: pointer;
+}
+
+input, select, textarea{
+	border: 1px solid rgb(195, 194, 204);
+}

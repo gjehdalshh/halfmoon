@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.halfmoon.market.sale.SaleMapper">
+	<select id="selLoc" resultType="LocDomain">
+		SELECT * 
+		FROM t_loc
+	</select>
+
+	<insert id="regProduct" useGeneratedKeys="true" keyProperty="i_product">
+		insert into t_product_sale (p_img_main, i_user, p_nm, p_price, i_product_type, type_sub_title, title, ctnt, i_loc, state, tag)
+		values ('test.jsp', #{i_user}, #{p_nm}, #{p_price}, #{i_product_type}, #{type_sub_title}, #{title}, #{ctnt}, #{i_loc}, #{state}, #{tag})
+	</insert>
+
+	<!-- 기본 상품 정보 -->
+	<select id="selProduct" resultType="ProductSaleDomain">
+		select a.i_product, a.p_nm, p_price, a.i_product_type, a.type_sub_title, a.p_img_main, a.title, a.ctnt, a.i_loc, a.ctnt, a.state, a.tag, a.r_dt, a.m_dt, a.hit,
+			   a.i_user, b.user_nm, TIMESTAMPDIFF(SECOND, a.r_dt, now()) as show_time
+		from t_product_sale a
+		inner join t_user b
+		on a.i_user = b.i_user
+		where i_product = #{i_product};
+	</select>
+
+	<!-- 상품등록유저 정보 -->
+	<select id="selProUser" resultType="UserDomain">
+		select count(*) as p_total, b.user_nm
+		from t_product_sale a
+		inner join t_user b
+		on a.i_user = b.i_user
+		where a.i_user = #{i_user};
+	</select>
+
+	<update id="upsMainImg">
+		update t_product_sale
+		set p_img_main = #{p_img_main}
+		where i_product = #{i_product};
+	</update>
+</mapper>

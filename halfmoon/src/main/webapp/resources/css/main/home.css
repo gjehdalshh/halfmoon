@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+#main-section{
+	background-color: #FBF7F2;
+}
+#main-section2{
+	background-color: white;
+}
+#main-section3{
+	background-color: #E6F3E6;
+}
+#main-section4{
+	background-color: white;
+}
+#main-section5{
+	background-color: white;
+}
+
+.main-sectiondiv{
+	width: 1104px;
+	margin: auto;
+	height: 500px;
+}
+.main-sectiondiv1{
+	width: 1104px;
+    margin: auto;
+    height: 3000px;
+    background-color: white;
+}
+h1{
+	text-align: center;
+	font-size: 35px;
+}
+.famoush1{
+	margin: 100px 0 100px 0;
+}
+.famous-cont{
+	margin: 100px 0 100px 0;
+	height: 768px;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+}
+.famous-box{
+	width: 256px;
+    height: 350px;
+    margin: 20px 10px;
+    background-color: #E6F3E6;
+}
+
+#div{
+	height: 100px;
+}
+
+
+/* 상품 리스트 뿌리기 */
+.product_cont {
+	padding: 10px;
+	float: left;
+}
+.product_cont img {
+	width: 150px;
+	height: 150px;
+}
+.mid_cont {
+	/*float: left;*/
+	background: wheat;
+}
+
+
+
+/* 인기 매물 */
+
+.famous_img {
+	width: 256px;
+	height: 256px;
+}
+.famous_tl{
+	display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+}
+
+.famous_pt{
+	display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.famous_title{
+	font-size: 22px;
+}
+
+.famous_time{
+	font-size: 13px;
+}
+
+.famous_price{
+	font-size: 16px;
+}
+
+.famous_loc{
+    text-align: right;
+    font-size: 15px;
+}
+
+
+

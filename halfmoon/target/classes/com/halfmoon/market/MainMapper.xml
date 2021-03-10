@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.halfmoon.market.MainMapper">
+	<select id="selMenuList" resultType="ProductTypeDomain">
+		SELECT * 
+		FROM t_product_type
+		ORDER BY i_product_type 
+	</select>
+
+	<!-- 전체상품 list 뿌리기 -->
+	<select id="selTotalList" resultType="ProductSaleDomain">
+		select i_product, p_img_main, title, p_price, i_loc, i_user,
+		TIMESTAMPDIFF(SECOND, r_dt, now()) as show_time
+		from t_product_sale
+		order by show_time
+	</select>
+
+	<select id="subSelMenuList" resultType="ProductTypeSubDomain">
+		SELECT *
+		FROM t_product_type_sub
+	</select>
+
+</mapper>
